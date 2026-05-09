@@ -1,5 +1,10 @@
 name: Step 0 # Start Exercise
-
+on:
+    workflow_call:
+            inputs:
+             node:
+               required:  true                
+              type:  string
 on:
   push:
     branches:
